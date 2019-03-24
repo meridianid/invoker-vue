@@ -1,0 +1,188 @@
+@import '@/assets/scss/invoker-tokens/index.scss';
+
+.root {
+  font-family: $font-primary;
+}
+
+.display1 {
+  composes: root;
+  font-size: 128px;
+  line-height: 1;
+  letter-spacing: -1.44px;
+  font-weight: 800;
+}
+.display2 {
+  composes: root;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: -1.628px;
+  font-weight: 800;
+}
+.display3 {
+  composes: root;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -1.44px;
+  font-weight: 800;
+}
+
+.heading1 {
+  composes: root;
+  font-size: 46px;
+  line-height: 52px;
+  letter-spacing: -1.2px;
+  font-weight: 700;
+}
+.heading2 {
+  composes: root;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -.8px;
+  font-weight: 700;
+}
+.heading3 {
+  composes: root;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+}
+.heading3Alt {
+  composes: root;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.4px;
+  font-weight: 500;
+}
+.heading4 {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.24px;
+  font-weight: 700;
+}
+.heading4Alt {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.24px;
+  font-weight: 500;
+}
+.heading5 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.12px;
+  font-weight: 500;
+}
+.heading5Alt {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.12px;
+  font-weight: 700;
+}
+.heading6 {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+  font-weight: 500;
+}
+.heading6Alt {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+  font-weight: 700;
+}
+
+.large {
+  composes: root;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.medium {
+  composes: root;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.small {
+  composes: root;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.captionBold {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+.caption {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.label {
+  font-weight: 500;
+  margin: 0px 0px 8px 0px;
+}
+
+.labelSmall {
+  composes: label;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.labelMedium {
+  composes: label;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.raw {
+  padding-bottom: 0;
+}
+
+.link {
+  cursor: pointer;
+  color: $brand-primary-200;
+  text-decoration: none;
+  transition: all 0.32s;
+
+  &:hover {
+    transition: all 0.28s;
+    text-decoration: underline;
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.breakWord {
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+.truncate {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: normal;
+}

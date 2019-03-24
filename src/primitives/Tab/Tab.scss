@@ -1,0 +1,31 @@
+@import '@/assets/scss/invoker-tokens/index.scss';
+
+.tab {
+  cursor: pointer;
+  color: rgba(0,0,0,.72);
+  transition: all .36s;
+}
+.tab:not(:first-child) {
+  cursor: pointer;
+  margin-left: 16px;
+}
+.tab:not(:last-child) {
+  cursor: pointer;
+  margin-right: 16px;
+}
+.text {
+  margin: 0;
+  padding: 24px 0;
+  line-height: 24px;
+  display: block;
+}
+
+.hover {
+  transition: all .28s;
+  box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
+}
+
+.active {
+  color: $brand-primary-200;
+  box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
+}

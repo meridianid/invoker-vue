@@ -1,0 +1,9 @@
+@import '@/assets/scss/invoker-tokens/index.scss';
+
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,.12);
+}

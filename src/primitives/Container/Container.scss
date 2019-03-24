@@ -1,0 +1,102 @@
+@import '@/assets/scss/invoker-tokens/index.scss';
+
+$width-narrow: 1080px;
+$left-fix: 15vw;
+$right-fix: 25vw;
+
+$gutter-sm: 24px;
+$gutter-md: 80px;
+$gutter-lg: 144px;
+
+.root {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.normal {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include screen(phone) {
+    max-width: 100%;
+    padding-right: $gutter-sm;
+    padding-left: $gutter-sm;
+  }
+
+  @include screen(tabPortrait) {
+    max-width: 100%;
+    padding-right: $gutter-sm;
+    padding-left: $gutter-sm;
+  }
+
+  @include screen(tabLandscape) {
+    max-width: 100%;
+  }
+
+  @include screen(desktop) {
+    max-width: 100%;
+    padding-right: $gutter-md;
+    padding-left: $gutter-md;
+  }
+
+  @include screen(desktopWide) {
+    max-width: 100%;
+    padding-right: $gutter-lg;
+    padding-left: $gutter-lg;
+  }
+}
+
+.narrow {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include screen(phone) {
+    max-width: 100%;
+    padding-right: $gutter-sm;
+    padding-left: $gutter-sm;
+  }
+
+  @include screen(tabPortrait) {
+    max-width: 100%;
+    padding-right: $gutter-sm;
+    padding-left: $gutter-sm;
+  }
+
+  @include screen(tabLandscape) {
+    max-width: 100%;
+    padding-right: $gutter-sm;
+    padding-left: $gutter-sm;
+  }
+
+  @include screen(desktop) {
+    max-width: $width-narrow;
+    padding-right: $gutter-sm;
+    padding-left: $gutter-sm;
+  }
+}
+
+.bleed {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fixLeft {
+  margin-left: $left-fix;
+  padding-left: $space-ml;
+}
+
+.fixRight {
+  @include screen(phone) {
+    margin-right: 0;
+  }
+  @include screen(tabPortrait) {
+    margin-right: 0;
+  }
+  @include screen(tabLandscape) {
+    margin-right: $right-fix;
+  }
+}
+
