@@ -1,28 +1,53 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ptext
+      type="display1"
+      tag="h1"
+      :class=$style.title
+      >
+      this is<br>Tinker.vue
+    </ptext>
+    <ptext type="heading5">made with ❤️by meridian.id</ptext>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+  components: {}
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '@/assets/scss/invoker-tokens/index.scss';
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: $font-primary;
+  box-sizing: border-box;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: inline-flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
+</style>
+
+<style lang="scss" module>
+  @import '@/assets/scss/invoker-tokens/index.scss';
+
+  .title {
+    padding-bottom: 24px;
+    color: #FFFFFF;
+    font-weight: 800;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right, $brand-secondary-100, #F5C55A);
+    // #EE726F #F5BB64 #ff8a00 #da1b60 #53B499
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 </style>
