@@ -1,14 +1,14 @@
 # vue-starter
 
-> This is a starter-kit for Vue.js projects
+This is a starter-kit for Vue.js projects
 
 ## Tokens
 
 This starter-kit already loaded with invoker-base, invoker-layouts, and invoker-tokens so you jump right into it. We also provide it locally for better customization based on your project.
 
-### Import tokens to your `<style/>` tag
+#### Easier way to import invoker-tokens to your `<style/>` tag
 
-> You can add this snippet to your global vs-code snippet so you can import the tokens faster. Just type `ima` and press `tab`.
+You can add this snippet to your global vs-code snippet so you can import the tokens faster. Just type `ima` and press `tab`.
 
 ```code-snippets
   "Simple vue local tokens import": {
@@ -24,9 +24,11 @@ This starter-kit already loaded with invoker-base, invoker-layouts, and invoker-
   },
 ```
 
-### SCSS & CSS-modules
+#### SCSS & CSS-modules
 
 We use css-modules and SCSS as standard styling for our css files. We use module instead of the default scoped because the default scoped leaked the styles properties to their children element. And we don't want that.
+
+---
 
 ## Pimitives
 
